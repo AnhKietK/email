@@ -8,5 +8,5 @@ RUN mvn -q clean package -DskipTests
 # Giai đoạn 2: chạy bằng Tomcat 10.1
 FROM tomcat:10.1-jdk25-temurin
 RUN rm -rf /usr/local/tomcat/webapps/*
-COPY --from=build /app/target/ch02email.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=build /app/target/email.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
