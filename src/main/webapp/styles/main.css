@@ -22,3 +22,39 @@ br {
 }
 #submit {
     margin-left: 0.5em; }
+
+.card {
+    background-color: #fff;
+    border: 1px solid #cfe0e0;
+    border-top: 4px solid teal;
+    border-radius: 6px;
+    padding: 8px 24px;
+    margin: 16px 0 20px;
+}
+ 
+.info-row {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #e4eeee;
+}
+ 
+.info-row:last-child {
+    border-bottom: none;
+}
+ 
+/* ghi đè label float của form, chỉ trong .info-row */
+.info-row label {
+    float: none;
+    flex: 0 0 10em;
+    margin-bottom: 0;
+    color: #005f5f;
+}
+ 
+.info-row span {
+    flex: 1;
+    word-break: break-word;
+}
+ 
+.note {
+    color: #555;
+}
